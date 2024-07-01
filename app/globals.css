@@ -8,6 +8,15 @@
 .body-bold {
   @apply text-[18px] font-bold;
 }
+.body4-bold {
+  @apply text-[14px] font-bold;
+}
 .headding5-semi {
   @apply text-[24px] font-semibold;
+}
+.headding-bold {
+  @apply text-[48px] font-bold;
+}
+.headding-light {
+  @apply text-[48px] font-[100];
 }
