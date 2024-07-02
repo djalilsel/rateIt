@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import LOGO from "@/public/LOGO.svg";
 import Link from "next/link";
@@ -9,13 +10,23 @@ const Header = () => {
         <img src={LOGO.src} alt="RateIt Logo" className="cursor-pointer" />
       </Link>
       <ul className="flex justify-between items-center gap-[36px] body-semi">
-        <li className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200">
-          How i works
+        <li
+          className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200"
+          onClick={() => {
+            document.getElementById("how it works").scrollIntoView();
+          }}
+        >
+          How it works
         </li>
         <li className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200">
           Pricing
         </li>
-        <li className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200">
+        <li
+          className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200"
+          onClick={() => {
+            document.getElementById("why it's important").scrollIntoView();
+          }}
+        >
           Why it's important
         </li>
         <li className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200">

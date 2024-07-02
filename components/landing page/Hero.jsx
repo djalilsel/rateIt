@@ -6,10 +6,12 @@ const Hero = () => {
   return (
     <div className="h-[60vh] flex justify-between items-center text-dark">
       <div className="flex flex-col gap-[32px]">
-        <h1 className="text-5xl headding-light text-gray">
-          Stop wasting time
+        <div>
+          <h1 className="text-5xl headding-light text-gray">
+            Stop wasting time
+          </h1>
           <h1 className="text-5xl headding-bold text-dark">in meetings</h1>
-        </h1>
+        </div>
         <p className="text-[18px] leading-6">
           Boost efficiency, save time & money <br /> with post meeting surveys.
         </p>

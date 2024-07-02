@@ -14,6 +14,9 @@
 .headding5-semi {
   @apply text-[24px] font-semibold;
 }
+.headding5-bold {
+  @apply text-[24px] font-semibold;
+}
 .headding-bold {
   @apply text-[48px] font-bold;
 }
