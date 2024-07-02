@@ -15,11 +15,17 @@
   @apply text-[24px] font-semibold;
 }
 .headding5-bold {
-  @apply text-[24px] font-semibold;
+  @apply text-[24px] font-bold;
 }
 .headding-bold {
   @apply text-[48px] font-bold;
 }
 .headding-light {
   @apply text-[48px] font-[100];
+}
+.headding3-bold {
+  @apply text-[36px] font-bold;
+}
+.source {
+  @apply text-[10px] font-medium;
 }
