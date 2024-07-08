@@ -9,23 +9,26 @@
   @apply text-[18px] font-bold;
 }
 .body4-bold {
-  @apply text-[14px] font-bold;
+  @apply text-[16px] font-bold;
 }
 .headding5-semi {
   @apply text-[24px] font-semibold;
 }
 .headding5-bold {
-  @apply text-[24px] font-bold;
+  @apply text-[24px] font-black;
 }
 .headding-bold {
-  @apply text-[48px] font-bold;
+  @apply text-[48px] font-black;
 }
 .headding-light {
   @apply text-[48px] font-[100];
 }
 .headding3-bold {
-  @apply text-[36px] font-bold;
+  @apply text-[36px] font-black;
 }
 .source {
   @apply text-[10px] font-medium;
+}
+.headding4-black {
+  @apply text-[28px] font-black;
 }

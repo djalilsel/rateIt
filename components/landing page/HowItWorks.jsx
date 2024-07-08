@@ -9,7 +9,7 @@ const HowItWorks = () => {
   return (
     <div
       id="how it works"
-      className="flex flex-col items-center gap-[90px] px-[100px] text-dark"
+      className="flex flex-col items-center gap-[90px] px-[300px] text-dark"
     >
       <Title title="How It Works?" />
       <div className="w-full flex justify-between">

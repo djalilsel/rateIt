@@ -4,7 +4,7 @@ import cartoon from "@/assets/CARTOON.png";
 
 const Hero = () => {
   return (
-    <div className="h-[60vh] flex justify-between items-center text-dark">
+    <div className="h-[60vh] px-[200px]  flex justify-between items-center text-dark">
       <div className="flex flex-col gap-[32px]">
         <div>
           <h1 className="text-5xl headding-light text-gray">

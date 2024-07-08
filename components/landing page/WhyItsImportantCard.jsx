@@ -5,7 +5,7 @@ import bottomQuotation from "@/assets/bottomQuotation.svg";
 const WhyItsImportantCard = ({ title, description, img }) => {
   return (
     <div
-      className="absolute top-1/2 left-1/2 rounded-[10px] shadow-xl drop-shadow-xl w-[600px] h-[300px] px-[50px] flex items-center justify-between"
+      className="absolute top-1/2 left-1/2 rounded-[10px] shadow-md drop-shadow-xl w-[600px] h-[300px] px-[50px] flex items-center justify-between bg-white"
       style={{ marginLeft: "-300px", marginTop: "-150px" }}
     >
       <img src={topQuotation.src} className="absolute top-6 left-6" />

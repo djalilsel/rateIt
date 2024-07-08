@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center text-dark">
+    <div className="flex px-[200px]  justify-between items-center text-dark">
       <Link href={"/"} className="select-none flex justify-center items-center">
         <img src={LOGO.src} alt="RateIt Logo" className="cursor-pointer" />
       </Link>
@@ -18,21 +18,36 @@ const Header = () => {
         >
           How it works
         </li>
-        <li className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200">
+        <li
+          className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200"
+          onClick={() => {
+            document.getElementById("pricing").scrollIntoView();
+          }}
+        >
           Pricing
         </li>
         <li
           className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200"
           onClick={() => {
-            document.getElementById("why it's important").scrollIntoView();
+            document.getElementById("whyit'simportant").scrollIntoView();
           }}
         >
           Why it's important
         </li>
-        <li className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200">
+        <li
+          className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200"
+          onClick={() => {
+            document.getElementById("aboutus").scrollIntoView();
+          }}
+        >
           About us
         </li>
-        <li className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200">
+        <li
+          className="cursor-pointer hover:text-gray-500 hover:scale-105 transition-all duration-200"
+          onClick={() => {
+            document.getElementById("contact").scrollIntoView();
+          }}
+        >
           Contact
         </li>
       </ul>
