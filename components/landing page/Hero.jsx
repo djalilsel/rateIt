@@ -17,13 +17,13 @@ const Hero = () => {
         </p>
         <div className="grid grid-cols-2 gap-[10px] body-semi">
           <Link
-            href={"/"}
+            href={"/signup"}
             className="text-white border-2 border-main bg-main rounded-[10px] w-[200px] h-[52px] flex justify-center items-center body4-bold"
           >
             Get started
           </Link>
           <Link
-            href={"/"}
+            href={"/signup"}
             className="text-main border-2 border-main rounded-[10px] w-[200px] h-[52px] flex justify-center items-center body4-bold"
           >
             Sign up with Google

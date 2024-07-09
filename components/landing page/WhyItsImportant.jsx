@@ -143,7 +143,7 @@ const WhyItsImportant = () => {
         </p>
       </div>
       <Link
-        href={"/"}
+        href={"/signup"}
         className="text-white border-2 border-main bg-main rounded-[10px] w-[200px] h-[52px] flex justify-center items-center body4-bold"
       >
         Sign up today

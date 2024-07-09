@@ -1,6 +1,7 @@
 import React from "react";
 import check_light from "@/assets/check_light.svg";
 import dots from "@/assets/dots.svg";
+import Link from "next/link";
 
 const PricingSidesCard = ({ offers, button_text, title, price }) => {
   const OFFERS = offers.map((offer, index) => (
@@ -21,9 +22,12 @@ const PricingSidesCard = ({ offers, button_text, title, price }) => {
       </div>
       <div className="text-[14px] flex flex-col gap-[8px] flex-1">{OFFERS}</div>
 
-      <button className="rounded-[10px] bg-main text-white flex justify-center items-center w-[200px] h-[50px] body4-bold">
+      <Link
+        href={"/signup"}
+        className="rounded-[10px] bg-main text-white flex justify-center items-center w-[200px] h-[50px] body4-bold"
+      >
         {button_text}
-      </button>
+      </Link>
     </div>
   );
 };

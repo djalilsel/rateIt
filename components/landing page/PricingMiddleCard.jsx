@@ -1,6 +1,7 @@
 import React from "react";
 import check from "@/assets/check.svg";
 import dots_light from "@/assets/dots_light.svg";
+import Link from "next/link";
 
 const PricingMiddleCard = () => {
   const offers = [
@@ -40,9 +41,12 @@ const PricingMiddleCard = () => {
       <div className="text-[16px] flex flex-col gap-[9px]  overflow-hidden">
         {OFFERS}
       </div>
-      <button className="rounded-[10px] bg-white text-main flex justify-center items-center w-[220px] h-[60px] body-bold">
+      <Link
+        href={"/signup"}
+        className="rounded-[10px] bg-white text-main flex justify-center items-center w-[220px] h-[60px] body-bold"
+      >
         Get Personal
-      </button>
+      </Link>
     </div>
   );
 };

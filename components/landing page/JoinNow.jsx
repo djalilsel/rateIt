@@ -1,5 +1,6 @@
 import React from "react";
 import joinnow_pattern from "@/assets/joinnow_pattern.svg";
+import Link from "next/link";
 
 const JoinNow = () => {
   return (
@@ -8,9 +9,12 @@ const JoinNow = () => {
         <div className="text-dark headding-bold">
           Send out your first <br /> Rate It today!
         </div>
-        <button className="rounded-[10px] bg-main text-white flex justify-center items-center w-[200px] h-[50px] body4-bold">
+        <Link
+          href={"/signup"}
+          className="rounded-[10px] bg-main text-white flex justify-center items-center w-[200px] h-[50px] body4-bold"
+        >
           Try for free
-        </button>
+        </Link>
       </div>
       <img src={joinnow_pattern.src} alt="joinnow_pattern" />
     </div>
