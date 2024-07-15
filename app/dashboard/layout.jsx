@@ -1,16 +1,11 @@
-import { SessionProvider } from "next-auth/react";
+import { authOptions } from "@/lib/auth";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
 
-export default function Dashboard({
-  children,
-  //   pageProps: { session, ...pageProps },
-}) {
-  return (
-    <html lang="en">
-      <main>
-        {/* <SessionProvider session={session}> */}
-        {children}
-        {/* </SessionProvider> */}
-      </main>
-    </html>
-  );
+export default async function Dashboard({ children }) {
+  const session = await getServerSession(authOptions);
+  if (!session) {
+    return redirect("/login");
+  }
+  return <main>{children}</main>;
 }
